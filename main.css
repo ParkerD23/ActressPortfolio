@@ -1,29 +1,33 @@
 /********************************
 	MAIN STYLES PAGE
 *********************************/
-
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300,500,700,900");
 
 
 
 /********************************
 	BASE ELEMENT STYLES
 *********************************/
-
-*    {
-	box-sizing: border-box;
+*:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: ;
+	font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.6;
 	margin: 0;
 	color: #3a3a3a;
 }
 
 p {
-	font-size: .95em;
+	font-size: 1.15em;
 	margin-bottom: 1.8em;
+	font-weight: 500;
 }
+
+
 
 h2,
 h3 {
@@ -47,11 +51,17 @@ img {
 }
 
 
+
+
 /*************************************
 	BASE LAYOUT STYLES
 *************************************/
 
 /************HEADER STYLES************/
+
+header {
+	background: #d9e4ea;
+}
 
 .main-head {
 	padding-top: .5em;
@@ -71,17 +81,20 @@ img {
 	margin-top: 5px;
 }
 
+
 .name a,
 .main-nav a {
 	display: block;
 	text-align: center;
 	padding: 10px 15px;
 	font-weight: bold;
-
+	color: #0d6dbc;
 }
 
+
+
 .main-nav a {
-	font-size: .95em;
+	font-size: 1.1em;
 	text-transform: uppercase;	
 }
 
@@ -94,7 +107,7 @@ img {
 	padding: 3.2em 0;
 	margin-bottom: 48px;
 	text-align: center;
-  background: url('img/hero-bg.jpg') no-repeat center center ;
+  background: url('img/hero-bg.jpg') no-repeat center center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -103,10 +116,10 @@ img {
 
 .profile-pic {
 	
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 350px;
   border-radius: 50%;
-  /*border: 1px solid white;*/
+  border: 1px solid silver;
 }
 
 .headline {
@@ -115,50 +128,123 @@ img {
 
 .headline,
 .tagline {
-	color: purple;
+	color: #ccc;
 }
 
 /*************MAIN CONTENT************/
 
 
 h1 {
-	font-size: 1.25em;
+	font-size: 1.5em;
 }
 
-.card {
-	margin-bottom: 5%;
-	padding-right: 1em;
-	padding-left: 1em;
+
+ 
+.card a {
+	height: 3.25em;
+	color: white;
+	background: darkgreen;
+	display: block;
+	width: 80%;
+	line-height: 3;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 300;
+	margin: auto;
+
+	
+}
+
+.card a:hover {
+	background: forestgreen;
 }
 
 figure {
 	display: block;
-	margin: 5% auto;
-
-
+	margin-bottom: 10%;
 }
 
 figcaption {
-	color: purple;
+	color: #0d6dbc;
+	text-align: center;
+	font-size: 1.4em;
 }
 
 #mid-pic {
-	border-radius: 15%;
-	
+	border-radius: 5%;
+	border: 1px solid silver;
+	display: block;
+	width: 300px;
+	height: 400px;
+	margin: auto;
 }
+
+#other-pic {
+	border-radius: 5%;
+	border: 1px solid silver;
+	display: block;
+	width: 300px;
+	height: 400px;
+}
+
 
 table {
-	width: 80%;
-	margin: 15px auto 0px;
+  max-width: 960px;
+  margin: 10px auto;
 }
 
-table, th, td {
-			border: 1px solid black;
+caption {
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 10px 0;
 }
 
-td {
-	text-align: center;
+th {
+  font-weight: 400;
+  background: #8a97a0;
+  color: #FFF;
 }
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+  background: #e8eeef;
+}
+
+th, td {
+  text-align: left;
+  padding: 20px;
+  font-weight: 400;
+}
+
+tfoot tr {
+  background: none;
+}
+
+tfoot td {
+  padding: 10px 2px;
+  font-size: 1.15em;
+  font-style: italic;
+  color: black;
+}
+
+#first table {
+	margin-top: 10%;
+}
+
+#first tr {
+	background: white;
+}
+
+#first td p {
+	color: black;
+	font-size: 1.15em;
+}
+
 
 /*************FOOTER**************/
 
@@ -180,7 +266,10 @@ footer img {
 /************MEDIA QUERIES*********/
 
 @media (min-width: 769px) {
-	
+	.wrap {
+		min-height: calc(100vh - 149px);
+	}
+
 	.main-head,
 	.main-content {
 		width: 90%;
@@ -195,6 +284,10 @@ footer img {
 		font-size: 1.25em;
 	}
 
+ iframe {
+	margin-left: 50%;
+}
+
 }
 
 
@@ -206,6 +299,8 @@ footer img {
 		max-width: 1150px;
 
 	}
+
+	
 
 
 }

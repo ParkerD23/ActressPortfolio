@@ -8,6 +8,10 @@ body {
 	min-height: 100vh;
 }
 
+.main-head {
+	flex-shrink: 0;
+}
+
 .main-content {
 	flex: 1;
 }
@@ -39,7 +43,7 @@ body {
 	}
 
 
-
+}
  
 
 
@@ -49,6 +53,8 @@ body {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
+
 
 	.card {
 		flex-basis: 0;
@@ -62,4 +68,8 @@ body {
 		order: -1;
 	}
 	
+  iframe {
+	margin-left: 50%;
+}
+
 }
