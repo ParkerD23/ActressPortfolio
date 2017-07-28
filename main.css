@@ -137,8 +137,6 @@ header {
 h1 {
 	font-size: 1.5em;
 }
-
-
  
 .card a {
 	height: 3.25em;
@@ -148,16 +146,16 @@ h1 {
 	width: 80%;
 	line-height: 3;
 	text-align: center;
-	font-size: 60px;
+	font-size: 40px;
 	font-weight: 300;
-	margin: auto;
-
-	
+	margin: auto;	
 }
 
 .card a:hover {
 	background: forestgreen;
 }
+
+
 
 figure {
 	display: block;
@@ -246,6 +244,8 @@ tfoot td {
 }
 
 
+
+
 /*************FOOTER**************/
 
 footer {
@@ -271,7 +271,8 @@ footer img {
 	}
 
 	.main-head,
-	.main-content {
+	.main-content,
+  .card {
 		width: 90%;
 		margin: 0 auto;
 	}
@@ -284,9 +285,11 @@ footer img {
 		font-size: 1.25em;
 	}
 
- iframe {
+  iframe {
 	margin-left: 50%;
 }
+
+  
 
 }
 
@@ -294,7 +297,8 @@ footer img {
 @media (min-width: 1025px) {
 
 	.main-head,
-	.main-content {
+	.main-content,
+  .card {
 		width: 80%;
 		max-width: 1150px;
 
