@@ -34,7 +34,6 @@ body {
 		align-items: center;
 	}
 
-	
 	.card {
 		flex: 1 50%;
 	}
@@ -42,10 +41,13 @@ body {
 	.main-content {
 		flex-wrap: wrap;
 	}
-
-
 }
- 
+
+@media (max-width: 1000px) {
+	#video .wrapper .box {
+		margin: 0 auto;
+	}
+}
 
 
 @media (min-width: 1025px) {
@@ -60,7 +62,7 @@ body {
 	.card {
 		flex-basis: 0;
 	}
-	
+
 	.first {
 		flex-grow: 1.4;
 	}
@@ -68,9 +70,7 @@ body {
 	.third {
 		order: -1;
 	}
-	
-  iframe {
-	margin-left: 50%;
-}
+
 
 }
+
