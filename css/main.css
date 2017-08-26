@@ -128,10 +128,10 @@ header {
 
 #showcase figure img.profile-pic {
 
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 380px;
     border-radius: 50%;
-    border: 1px solid silver;
+    border: 0.5px solid silver;
     margin: 3.5em auto 0;
 }
 
@@ -256,7 +256,9 @@ tfoot td {
 	font-size: 1.15em;
 }
 
-
+#company.contact li {
+    font-size: 20px;
+}
 
 
 /*************FOOTER**************/
