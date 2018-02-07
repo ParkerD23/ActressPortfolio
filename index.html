@@ -1,106 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Kiera Jefferson</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/flexboxgrid.css">
-		<link rel="stylesheet" href="css/flexbox.css">
-    <link rel="stylesheet" href="css/main.css">
-	</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kiera Jefferson</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-	<body>
 
-			<header>
-      <div class="main-head">
-				<h1 class="name"><a href="index.html">Kiera Jefferson</a></h1>
-				<nav>
-					<ul class="main-nav">
-						<li class="selected"><a href="index.html">About</a></li>
-						<li><a href="resume.html">Resume</a></li>
+    </head>
+    <body data-spy="scroll" data-target="#mainNav" data-offset="50">
+        <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
 
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-      </div>
-			</header>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo" id="title" href="#"><h2>Kiera Jefferson</h2></a>
+                </div>
 
-     <section id="showcase">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#headshots">Headshots</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>   <!--END OF NAV BAR -->
+        <div class="jumbotron" id="home">
+            <div class="container">
+
+
+            </div>
+        </div>
+
+<!--<p><a href="" class="btn btn-primary btn-lg" role="button">Resume</a></p>-->
+
+
+<!--MAIN CONTENT AREA-->
+        <div class="container text-center">
+            <h2>Welcome</h2>
+            <div class="row">
+                <div class="col-md-12">
+                  <p><strong>Kiera Jefferson</strong> grew up in Delray Beach, a small beach town in South Florida. Raised by her mother along with her twin brothers and two sisters. She started doing theater in middle school and continued to perform in high school. However, her high school theater teacher, Mr. Coppola is the one who introduced her to improv at a young age. She went on to join an improv group called Oncoming Traffic while getting her degree in Creative Writing from Florida State University. In her last year at FSU she started doing some work with the undergrad film school and her last year as a Seminole she co-wrote and starred in an MFA film titled "Pulling U".</p>
+                </div>
+            </div>
+        </div>
+
+<div id="headshots"></div>
+<!--HEADSHOT GALLERY-->
+    <div class="container headshot">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                <a href="img/sitcom.jpg" target="_blank"><img class="img-responsive" src="img/sitcom.jpg" style="width:100%"></a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                <a href="img/potter.jpg" target="_blank"><img class="img-responsive" src="img/potter.jpg" style="width:100%"></a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                <a href="img/denium.jpg" target="_blank"><img class="img-responsive" src="img/denium.jpg" style="width:100%"></a>
+                </div>
+            </div>
+            <h3 class="text-center">Height: 5'6'' &nbsp Weight: 140 &nbsp Hair: Brown &nbsp Eyes: Hazel</h3>
+        </div>
+    </div>
+
+<!--VIDEO ROW-->
         <div class="container">
-            <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
-                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 showcase-content">
-                   <figure>
-                    <img class="profile-pic" src="img/headshot.jpeg" alt="Photo of Kiera Jefferson">
-                    <div class="">
-                    <figcaption>Actress // Comedian // Writer</figcaption>
+
+            <div class="row" id="resume">
+                    <div class="col-md-6" id="videoBox">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SRE9JI7iFmw?ecver=1 controls=1"></iframe>
+                        </div>
                     </div>
-                   </figure>
-              </div>
+                    <div class="col-md-6" id="videoStuff">
+                       <p><strong>Kiera</strong> always knew she had a knack and a love for comedy so she followed her dreams to New York City. In the big apple she studied and performed at Upright Citizens Brigade under such teachers as Anthony Atamanuik, Shannon O'Neil, Ben Rameaka and Doug Moe, among others. After almost 7 years in NYC she decided to make a change and move cross country to the city of angels. She is now currently enrolled in classes at John Rosenfeld Studios.</p>
+                    </div>
             </div>
+
         </div>
-     </section>
 
+                <h3 class="text-center"><a href="#hide"  id="clickme" data-toggle="collapse">See My Resume</a></h3>
+    <div class="container">
 
-<!-- MAIN CONTENT AREA -->
+        <div class="row">
 
-    <section id="welcome" class="about">
-      <div class="container">
-        <div class="row center-xs center-sm center-md center-lg">
-          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <h1>Welcome</h1>
-
-          <p>Kiera Jefferson grew up in Delray Beach, a small beach town in South Florida. Raised by her mother along with her twin brothers and two sisters. She started doing theater in middle school and continued to perform in high school. However, her high school theater teacher, Mr. Coppola is the one who introduced her to improv at a young age. She went on to join an improv group called Oncoming Traffic while getting her degree in Creative Writing from Florida State University. In her last year at FSU she started doing some work with the undergrad film school and her last year as a Seminole she cowrote and starred in an MFA film titled "Pulling U".</p>
-          </div>
+          <div id="hide" class="collapse">
+            <table class="table table-responsive table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Production</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Theater/Studio</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><a href="resume.pdf">Click Here For Resume.pdf</a></td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="6">TV/FILM</th>
+                          <td>Swipe Right</td>
+                          <td>Bartender (Background)</td>
+                          <td>TLC Productions</td>
+                    </tr>
+                    <tr>
+                          <td>Pulling U</td>
+                          <td>Ryan (Lead)</td>
+                          <td>Dir: Michael Copponex</td>
+                    </tr>
+                    <tr>
+                          <td>Paramecium Pete</td>
+                          <td>Melissa (Lead)</td>
+                          <td>Dir: Kathryn Fuss</td>
+                    </tr>
+                    <tr>
+                          <td>Katie</td>
+                          <td>Guest Comedian</td>
+                          <td>ABC Productions</td>
+                    </tr>
+                    <tr>
+                          <td>Bon Apetit</td>
+                          <td>Restaurant Guest</td>
+                          <td>Covalent Productions</td>
+                    </tr>
+                    <tr>
+                          <td>Breast Cancer Awareness</td>
+                          <td>Teen Girl</td>
+                          <td>S.G.C. Foundation</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" rowspan="6">Improv</th>
+                          <td>Supernova Rd. 9</td>
+                          <td>Chariot (Player)</td>
+                          <td>Treehouse Theater</td>
+                    </tr>
+                    <tr>
+                          <td>10 Easy Pieces</td>
+                          <td>Performer</td>
+                          <td>Del Close Marathon</td>
+                    </tr>
+                    <tr>
+                          <td>Kaleidoscope</td>
+                          <td>Erin Triplet Team (Player)</td>
+                          <td>The Creek and The Cave</td>
+                    </tr>
+                    <tr>
+                          <td>Dinner Date w/ Risky Brisket</td>
+                          <td>Better Looking Men (Player)</td>
+                          <td>2A</td>
+                    </tr>
+                    <tr>
+                          <td>Florence Presents Monoscene</td>
+                          <td>PEPES (Player)</td>
+                          <td>People's Improv Theater</td>
+                    </tr>
+                    <tr>
+                          <td>Storyteller's Showcase</td>
+                          <td>Kiera Jefferson</td>
+                          <td>The Magnet Theater</td>
+                    </tr>
+                </tbody>
+              </table>
+              <table class="table table-condensed">
+              <caption> Training </caption>
+              <tfoot>
+                    <tr>
+                          <td colspan="2" id="skill">Special Skills: CPR Certified/Small Hand Guns Trained/Sketch Writing</td>
+                    </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <th scope="row" rowspan="1">Acting</th>
+                          <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspJohn Rosenfeld Studios</td>
+                </tr>
+                <tr>
+                  <th scope="row" rowspan="1">On-Camera Commercial</th>
+                          <td>
+                          <ul>
+                          <li>Upright Citizens Brigade</li>
+                          <li>The Magnet Theater</li>
+                          </ul></td>
+                </tr>
+                <tr>
+                  <th scope="row" rowspan="1">Improv</th>
+                          <td>
+                          <ul>
+                          <li>Upright Citizens Brigade</li>
+                          <li>Oncoming Traffic</li>
+                          <li>The Magnet Theater</li>
+                          </ul></td>
+                </tr>
+                <tr>
+                  <th scope="row" rowspan="1">Storytelling</th>
+                          <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe Magnet Theater</td>
+                </tr>
+              </tbody>
+        </table>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="video" class="about">
-      <div class="container">
-        <div class="row center-xs center-sm center-md center-lg">
-
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div class="box">
-                    <iframe width="560" height="315"
-
-                    src="https://www.youtube.com/embed/SRE9JI7iFmw?ecver=1 controls=1" frameborder="0" allowfullscreen=""></iframe>
-              </div>
-          </div>
-
-
-          </div>
-        </div>
-      </section>
-<br />
-<br />
-<br />
-<section id="info">
-        <div class="container">
-            <div class="row center-xs center-sm center-md center-lg around-xs around-sm around-md around-lg">
-                <div class="col-xs-10 col-sm-6 col-md-8 col-lg-10">
-                <p id="about-end"> Kiera always knew she had a knack and a love for comedy so she followed her dreams to New York City. In the big apple she studied and performed at Upright Citizens Brigade under such teachers as Anthony Atamanuik, Shannon O'Neil, Ben Rameaka and Doug Moe, among others. After almost 7 years in NYC she decided to make a change and move cross country to the city of angels. She is now currently enrolled in classes at John Rosenfeld Studios.</p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <img id="mid-pic" src="img/kiera-headshot.jpg" class="img-fluid" alt="Photo of Kiera Jefferson">
-
-                </div>
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>AC Talent Agency</h2>
+                <p>Larry Wiedemann</p>
+                <i class="fa fa-phone"></i>
+                323-878-0800 ext.(5)<br>
+                <i class="fa fa-envelope"></i>
+                Larry@ACtalentagency.com<br>
+                <i class="fa fa-map"></i>
+                Los Angeles, CA
             </div>
+
+            <div class="col-sm-6">
+                <h2>Connect</h2>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=5230371" class="fa fa-facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/kieraj/" class="fa fa-instagram"></a>
+                <a href="mailto:kierajefferson@gmail.com" class="fa fa-envelope"></a>
+                <a target="_blank" href="https://mobile.twitter.com/kieraj05" class="fa fa-twitter"></a>
+            </div>
+            <!-- <div class="col-sm-4">
+                <h2>WORD LOGO HERE</h2>
+            </div> -->
         </div>
-    </section>
+
+        <br />
+        <br />
+        <br />
+
+        <p  id="contact">&copy;Kiera Jefferson 2018</p>
 
 
-		<footer>
-<br />
-      <a target="_blank" href="https://www.facebook.com/profile.php?id=5230371"><img src="img/facebook-wrap.png" alt="Facebook Logo">  </a>
-	  <a target="_blank" href="https://www.instagram.com/kieraj/"><img src="img/instagram.png" alt="Instagram Logo"></a>
 
-      <a href="mailto:kierajefferson@gmail.com"><img src="img/email.png" alt="Email Logo"></a>
-	  <a target="_blank" href="https://mobile.twitter.com/kieraj05"><img src="img/twitter.svg" alt="Twitter Logo"></a>
 
-<br />
-			<p>&copy;Kiera Jefferson 2017</p>
+    </footer>
 
-		</footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	</body>
+    <script>
+      $(function() {
+        //Smooth Scrolling
+        $('a[href*="#"]:not([href="#hide"])').click(function() {
+          if(location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              $('html, body').animate({
+
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+
+
+//         $('#clickme').click(function () {
+//           var target = $(this).data('toggle');
+//         $(this).collapse('hide');
+// });
+      });
+
+    </script>
+
+
+    </body>
 </html>
