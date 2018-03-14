@@ -113,6 +113,18 @@
             #skill{
                 font-weight:bold;
                 color:#5e4485;
+            }l
+
+            button#trigger{
+                margin:25px auto 0;
+                display:block;
+                background-color:#5e4485;
+                color:#fff;
+            }
+
+            button#trigger:focus,
+            button#trigger:hover{
+                color:yellow;
             }
 
             footer{
